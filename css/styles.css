@@ -115,7 +115,6 @@ button {
     color: #ffffff;
     background: #4D5AE5;
     border: none;
-    border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -176,7 +175,6 @@ button {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    border-radius: 4px;
     border: 1px solid #E7E9FC;
     color: var(--filter-text-color);
     background: var(--filter-bg-color);
