@@ -94,8 +94,6 @@ button {
 }
 
 .hero-title {
-    /*margin: 0 auto;*/
-    /*width: 496px;*/
     text-align: center;
     font-size: var(--hero-title-font-size-desktop);
     line-height: 1.07;
