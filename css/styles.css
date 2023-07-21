@@ -108,7 +108,6 @@ button {
 }
 
 .hero-btn {
-    display: block;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -153,7 +152,7 @@ button {
     background: var(--team-section-bg-color);
 }
 
-.teammate-title {
+.teammate_title {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -161,7 +160,7 @@ button {
     color: var(--card-title-color);
 }
 
-.teammate-text {
+.teammate_text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
@@ -195,7 +194,7 @@ button {
     color: var(--portfolio-card-title-color);
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.02em;
 }
 
 .portfolio_card_text {
