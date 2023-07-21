@@ -1,17 +1,19 @@
 :root {
     --body-font-family: 'Roboto', sans-serif;
     --logo-font-family: 'Raleway', sans-serif;
+    --body-color: #FFFFFF;
     --body-text-color: #434455;
     --logo-font-size: 18px;
-    --logo-span-color: #4D5AE5;
-    --logo-color: #2E2F42;
-    --logo-white-color: #FFFFFF;
+    --logo-color: #4D5AE5;
+    --logo-dark-color: #2E2F42;
+    --logo-white-color: #f4f4fd;
     --nav-link-color: #2E2F42;
     --nav-link-color-hover: #404BBF;
     --nav-link-font-size: 16px;
     --hero-title-color: #FFFFFF;
     --hero-title-font-size-desktop: 56px;
     --section-title-color: #2E2F42;
+    --feature-color-text: #434455;
     --card-title-color: #2E2F42;
     --card-title-font-size: 20px;
     --card-text-font-size: 16px;
@@ -31,32 +33,21 @@
 body {
     font-family: var(--body-font-family);
     color: var(--body-text-color);
+    background: var(--body-color);
 }
 
-a {
+.list {
+    list-style: none;
+}
+
+
+.link {
     text-decoration: none;
     color: currentColor;
 }
 
-ul {
-    list-style: none;
-}
-
-h1,
-h2,
-h3,
-p {
-    margin: 0;
-    padding: 0;
-}
-
 button {
     cursor: pointer;
-}
-
-.container {
-    margin: 0 auto;
-    width: 1128px;
 }
 
 .logo {
@@ -64,24 +55,30 @@ button {
     color: var(--logo-color);
     font-size: var(--logo-font-size);
     font-weight: 800;
-    line-height: 1.16;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
-.logo_span {
-    color: var(--logo-span-color);
+.logo_dark_span {
+    color: var(--logo-dark-color);
 }
 
 .nav-link {
     color: var(--nav-link-color);
-    font-size: var(--nav-link-font-size);
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    color: var(--nav-link-color-hover);
+    color:  #404bbf;
+}
+
+.address {
+    font-style: normal;
 }
 
 .address-link {
@@ -89,6 +86,7 @@ button {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .address-link:hover, .address-link:focus {
@@ -96,25 +94,25 @@ button {
 }
 
 .hero-title {
-    margin: 0 auto;
-    width: 496px;
+    /*margin: 0 auto;*/
+    /*width: 496px;*/
+    text-align: center;
     font-size: var(--hero-title-font-size-desktop);
     line-height: 1.07;
+    letter-spacing: 0.02em;
     color: #ffffff;
 }
 
 .hero {
-    padding: 188px 292px;
     background: #2E2F42;
 }
 
 .hero-btn {
     display: block;
-    margin: 0 auto;
-    padding: 16px 32px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    letter-spacing: 0.04em;
     color: #ffffff;
     background: #4D5AE5;
     border: none;
@@ -129,22 +127,25 @@ button {
 .section_title {
     font-size: 36px;
     line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
     color: var(--section-title-color);
     text-transform: capitalize;
 }
 
 .feature_title {
     color: var(--card-title-color);
-    font-size: var(--card-title-font-size);
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.02em;
 }
 
 .feature_text {
-    font-size: var(--card-text-font-size);
+    font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
+    color: var(--feature-color-text);
 }
 
 
@@ -156,6 +157,8 @@ button {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--card-title-color);
 }
 
 .teammate-text {
@@ -164,13 +167,16 @@ button {
     letter-spacing: 0.32px;
 }
 
+.team_list-item {
+    background: #FFFFFF;
+}
 
 .filter_btn {
-    padding: 12px 24px;
-    font-size: var(--filter-text-font-size);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.64px;
+    letter-spacing: 0.04em;
     border-radius: 4px;
     border: 1px solid #E7E9FC;
     color: var(--filter-text-color);
@@ -182,7 +188,6 @@ button {
     color: var(--filter-text-color-hover);
     background: var(--filter-bg-color-hover);
     border: none;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .portfolio_card_title {
@@ -200,7 +205,7 @@ button {
 }
 
 
-.logo.footer_logo {
+.logo_white_span {
     color: var(--logo-white-color);
 }
 
@@ -210,4 +215,6 @@ button {
 
 .footer_text {
     color: var(--foter-text-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
