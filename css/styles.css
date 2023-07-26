@@ -28,6 +28,10 @@
     --portfolio-card-text-font-size: 16px;
     --foter-text-color: #F4F4FD;
     --foter-bg-color: #2E2F42;
+    --btn-bg-color: #4D5AE5;
+    --btn-color: #ffffff;
+    --btn-bg-hover: #404BBF;
+    --link-color-hover: #404BBF;
 }
 
 body {
@@ -74,7 +78,7 @@ button {
 
 .nav-link:hover,
 .nav-link:focus {
-    color:  #404bbf;
+    color:  var(--link-color-hover);
 }
 
 .address {
@@ -84,13 +88,13 @@ button {
 .address-link {
     color: currentColor;
     font-size: 16px;
-    font-weight: 500;
+    /*font-weight: 500;*/
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
 .address-link:hover, .address-link:focus {
-    color: #404BBF;
+    color: var(--link-color-hover);
 }
 
 .hero-title {
@@ -110,14 +114,14 @@ button {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #ffffff;
-    background: #4D5AE5;
+    color: var(--btn-color);
+    background: var(--btn-bg-color);
     border: none;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-    background: #404BBF;
+    background: var(--btn-bg-hover);
 }
 
 .section_title {
